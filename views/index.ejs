@@ -1,0 +1,24 @@
+<%- include('layout/header') %>
+<body>
+    <header class="showcase">
+        <div class="container">
+            <form class="box" action="/home" method="post">
+               <div class="main-area">
+                   <h1>myDiary</h1>
+                   <h2>write notes, anecdotes & quotes</h2>
+               </div>
+               <div class="mb-3">
+                 <label for="exampleInputEmail1" class="form-label">Email address</label>
+                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+               </div>
+               <div class="mb-3">
+                 <label for="exampleInputPassword1" class="form-label">Password</label>
+                 <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+               </div>
+               <button type="submit" class="btn btn-primary">Log In</button>
+               <h3 class="reg mt-3">Don't have an account?<span>  </span><a href="/register">Register</a></h3>
+             </form>
+           </div>
+    </header>
+</body>
+<%- include('layout/footer') %>
